@@ -78,6 +78,7 @@ On the deploy server, Apache Tomcat was used to deploy the `.war` file generated
    Download the Tomcat archive and unzip it:
 
     ```bash
+    wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.110/bin/apache-tomcat-9.0.110.tar.gz
     tar -xvzf apache-tomcat-9.0.110.tar.gz
     ```
 
