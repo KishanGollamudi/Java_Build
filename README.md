@@ -158,6 +158,5 @@ MyShuttle-Java-app/
 
 ## Build Configuration: Custom `pom.xml`
 
-The project uses a customized `pom.xml` file to define dependencies, build plugins, and packaging configuration.  
-This modified file is included in the repository as a standalone file named:
+The project uses a customized `pom.xml` file to define dependencies, build plugins, and packaging configuration.
 
