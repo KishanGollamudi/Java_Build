@@ -106,8 +106,30 @@ On the deploy server, Apache Tomcat was used to deploy the `.war` file generated
     This will deploy the `.war` file and make the application available on the server.
 
 ---
+6. **Edit Tomcat's `context.xml` file**:
+   <img width="1920" height="1080" alt="4" src="https://github.com/user-attachments/assets/89204647-98ee-441d-8cee-7b9ca067ae52" />
 
-## Accessing the Application
+   If you made changes to the `context.xml` file, such as modifying settings for the `manager` application, these should be noted. For example:
+
+    - Navigate to the `META-INF` directory within the `manager` app:
+        ```bash
+        cd apache-tomcat-9.0.110/webapps/manager/META-INF/
+        ```
+7. **Edit `tomcat-users.xml` for user roles and permissions**:
+<img width="1920" height="1080" alt="5" src="https://github.com/user-attachments/assets/3e7f3b4b-f958-4c99-89b0-ba52d9ab63cc" />
+
+    The `tomcat-users.xml` file is used to define roles and users, especially for admin access to the Tomcat Manager and Host Manager. Changes in this file might include creating a user with `manager-gui` and `admin-gui` roles for management purposes.
+
+    - Navigate to the `conf/` directory:
+        ```bash
+        cd apache-tomcat-9.0.110/conf/
+        ```
+
+    - Edit the `tomcat-users.xml` file:
+        ```bash
+        sudo vi tomcat-users.xml
+        ```
+        
 
 Once the Tomcat server is running, you can access the application by navigating to the following URL:
 <img width="1920" height="1080" alt="3" src="https://github.com/user-attachments/assets/03f45c3a-2d8a-44c8-b696-76618cdb9b43" />
